@@ -1,0 +1,11 @@
+--2025-07-31 23:49:45--  https://dummyimage.com/300x200/000/fff.png
+Resolving dummyimage.com (dummyimage.com)... 104.21.32.200, 172.67.154.145, 2606:4700:3037::6815:20c8, ...
+Connecting to dummyimage.com (dummyimage.com)|104.21.32.200|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 714 [image/png]
+Saving to: ‘/home/adnaan/Documents/p1/myp1/public/images/restaurant.jpg’
+
+               /home/adnaan/D   0%[                                                  ]       0  --.-KB/s               /home/adnaan/Documents/p1/myp 100%[=================================================>]     714  --.-KB/s    in 0s      
+
+2025-07-31 23:49:46 (367 MB/s) - ‘/home/adnaan/Documents/p1/myp1/public/images/restaurant.jpg’ saved [714/714]
+
