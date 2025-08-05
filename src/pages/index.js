@@ -111,7 +111,20 @@ export default function Home() {
             <h1 className={styles.heroTitle}>
               Hi, I'm <span className={styles.highlight}>Your Developer</span>
             </h1>
-            <h2 className={styles.heroSubtitle}>Website Development</h2>
+            <div className="heroServicesListOverride">
+              <span className="heroSubtitleMainOverride">Website Development</span>
+              <ul className="heroServicesUlOverride">
+                <li>Landing Pages</li>
+                <li>Dashboards</li>
+                <li>E-commerce Webpages</li>
+                <li>Business & Portfolio Websites</li>
+                <li>Blogs & Content Platforms</li>
+                <li>Admin Panels</li>
+                <li>Booking & Reservation Systems</li>
+                <li>Interactive Forms & Surveys</li>
+                <li>Custom Web Applications</li>
+              </ul>
+            </div>
             <p className={styles.heroDescription}>
               I create beautiful, responsive websites and web applications that help businesses grow online.
               Specializing in modern technologies and user-centered design.
@@ -298,7 +311,7 @@ export default function Home() {
                   </div>
                   <div className={styles.contactItem}>
                     <span className={styles.contactIcon}>🌍</span>
-                    <span>Any where</span>
+                    <span>Anonymous</span>
                   </div>
                 </div>
               </div>
@@ -345,6 +358,62 @@ export default function Home() {
         .portfolioImage img:hover {
           transform: scale(1.05);
           box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .heroServicesListOverride {
+          margin-bottom: 10px;
+          text-align: center;
+          background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+          border-radius: 16px;
+          box-shadow: 0 4px 24px rgba(80, 80, 180, 0.08);
+          padding: 10px;
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .heroSubtitleMainOverride {
+          display: block;
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: #fff;
+          letter-spacing: 1px;
+          text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .heroServicesUlOverride {
+          list-style: none;
+          color: #fff;
+          font-size: 1rem;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0 20px;
+          justify-content: center;
+        }
+        .heroServicesUlOverride li {
+          min-width: 220px;
+          margin: 0 0 12px 0;
+          padding: 10px 18px;
+          background: rgba(255,255,255,0.08);
+          border-radius: 8px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+          transition: background 0.2s;
+          text-decoration: none;
+          font-weight: 500;
+          letter-spacing: 0.5px;
+        }
+        .heroServicesUlOverride li:hover {
+          background: rgba(255,255,255,0.18);
+        }
+        @media (max-width: 600px) {
+          .heroServicesUlOverride {
+            flex-direction: column;
+            gap: 4px 0;
+          }
+          .heroServicesUlOverride li {
+            min-width: unset;
+          }
+          .heroServicesListOverride {
+            padding: 16px 0 6px 0;
+          }
         }
       `}</style>
     </>
